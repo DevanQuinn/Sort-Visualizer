@@ -22,7 +22,7 @@ const SortingVisualizer = () =>
         return setArray(arr);
     }
 
-    useEffect(() => generateArrayVals(1000, 5, size), []);
+    useEffect(() => generateArrayVals(1000, 5, size), [size]);
     
     const handleSpeed = (e) => 
     {
@@ -30,14 +30,14 @@ const SortingVisualizer = () =>
         setSpeed(newSpeed);
     }
 
-    const mergeSort = () =>
-    {
-        setDisabled(true);
-        toggleGenerate();
-        const newArray = sortingAlgorithms.mergeSort(array);
-        sortingAlgorithms.visualizeAlt('merge', speed, toggleGenerate);
-        //return setTimeout(() => setArray(newArray), 1000);
-    }
+    // const mergeSort = () =>
+    // {
+    //     setDisabled(true);
+    //     toggleGenerate();
+    //     const newArray = sortingAlgorithms.mergeSort(array);
+    //     sortingAlgorithms.visualizeAlt('merge', speed, toggleGenerate);
+    //     //return setTimeout(() => setArray(newArray), 1000);
+    // }
 
     const bubbleSort = () => 
     {

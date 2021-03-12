@@ -103,8 +103,9 @@ const bubbleSort = array =>
     }
 }
 
-export default {
+const sorting = {
     visualizeAlt,
     mergeSort,
     bubbleSort
 };
+export default sorting;
