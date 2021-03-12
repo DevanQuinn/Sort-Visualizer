@@ -1,0 +1,20 @@
+html {
+  background-color: #282c34;
+}
+
+
+
+#array-container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: end;
+    justify-content: center;
+    transform: rotate(180deg) scaleX(-1);
+    height: 90vh;
+}
+
+.array-bar {
+    width: 5px;
+    background-color: red;
+    margin: 0 3px;
+}
