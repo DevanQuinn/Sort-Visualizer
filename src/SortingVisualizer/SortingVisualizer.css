@@ -14,7 +14,12 @@ html {
 }
 
 .array-bar {
-    width: 5px;
     background-color: red;
     margin: 0 3px;
+    width: 5px;
+}
+
+.tag {
+    display: inline-block;
+    color: white;
 }
